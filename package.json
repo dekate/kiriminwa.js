@@ -1,0 +1,41 @@
+{
+  "name": "@dekate/kiriminwa.js",
+  "version": "0.0.1",
+  "description": "Official Wrapper for kiriminwa.id",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.build.json --module CommonJS --outDir dist/cjs",
+    "build:esm": "tsc --project tsconfig.json --module ESNext --outDir dist/esm",
+    "build": "npm run build:cjs && npm run build:esm",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "kiriminwa",
+    "email",
+    "whatsapp",
+    "sms"
+  ],
+  "author": "Dekate",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekate/kiriminwa.js"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^20.14.1",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "node": "^20.14.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
